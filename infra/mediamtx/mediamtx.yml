@@ -1,0 +1,35 @@
+logLevel: info
+logDestinations: [stdout]
+logStructured: false
+
+# SchoolView API decides who may publish or watch.
+authMethod: http
+authHTTPAddress: http://127.0.0.1:4001/internal/mediamtx/auth
+authHTTPExclude:
+  - action: api
+
+# Local-only control API.
+api: true
+apiAddress: 127.0.0.1:9997
+
+# RTSP camera publishing.
+rtsp: true
+rtspAddress: :8554
+rtspTransports: [tcp]
+
+# WebRTC parent viewing.
+webrtc: true
+webrtcAddress: :8889
+webrtcLocalUDPAddress: :8189
+webrtcAdditionalHosts:
+  - 10.20.4.5
+webrtcAllowOrigins: ["*"]
+# Not needed for our first live-view implementation.
+hls: false
+rtmp: false
+srt: false
+playback: false
+
+# Allow cameras to publish to their configured stream paths.
+paths:
+  all_others:

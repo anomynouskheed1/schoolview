@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "SchoolView",
+    "slug": "parent-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/schoolview-icon.png",
+    "scheme": "parentmobile",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#208AEF",
+        "foregroundImage": "./assets/images/schoolview-icon.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "ios": {
+      "icon": "./assets/images/schoolview-icon.png"
+    },
+    "web": {
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/schoolview-icon.png",
+          "imageWidth": 160
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "dc226aff-ed2c-44bb-a81e-abe48becf5f6"
+      }
+    },
+    "owner": "kheed20"
+  }
+}

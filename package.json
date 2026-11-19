@@ -1,0 +1,16 @@
+{
+    "name": "schoolview",
+    "private": true,
+    "workspaces": [
+        "apps/api",
+        "apps/school-web",
+        "apps/admin-web",
+        "apps/parent-mobile",
+        "packages/*"
+    ],
+    "dependencies": {
+        "@supabase/supabase-js": "^2.119.0",
+        "lucide-react": "^1.70.0",
+        "react-router-dom": "^7.18.5"
+    }
+}
